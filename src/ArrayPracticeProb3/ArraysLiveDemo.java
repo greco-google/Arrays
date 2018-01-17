@@ -29,6 +29,10 @@ public class ArraysLiveDemo {
 		int max = Integer.MIN_VALUE;// Start at smallest possible number
 		int min = Integer.MAX_VALUE;// Start at largest possible number
 		
+		//initializer lists (build values right into the array)
+		int [] someArray = { 2,3,4,6,8,10,8,19};
+		System.out.println(someArray[5]);
+		
 		System.out.println("Enter 5 Integers");
 		numbers[0] = input.nextInt();
 		numbers[1] = input.nextInt();

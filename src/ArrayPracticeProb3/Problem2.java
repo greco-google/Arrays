@@ -7,10 +7,6 @@ public class Problem2 {
 	
 	public static void main(String[] args) {
 		
-//		Create an Array of your top four vacation spots. 
-//		Print the first spot and the last spot in your 
-//		array.
-		
 		String [] Names = new String [5];
 		
 		Names[0] = "Gracien";

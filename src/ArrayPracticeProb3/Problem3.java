@@ -1,4 +1,5 @@
 package ArrayPracticeProb3;
+import java.lang.reflect.Array;
 import java.util.Scanner; 
 
 public class Problem3 {
@@ -15,24 +16,24 @@ public class Problem3 {
 		
 		Scanner input = new Scanner(System.in);
 	    System.out.println("Enter size of array:");
-	    Scanner userInputEntry = new Scanner(System.in);
-	    int inputLength =userInputEntry.nextInt();
+	    Scanner user = new Scanner(System.in);
+	    int inputLength =user.nextInt();
 	    int array[] = new int[inputLength];
- 
-
 	    }
 
-//	public static void populateArray(array[] array) {
-//	    for(int i=0;i<array.length().i++)
-//	    {
-//	       array[i]=new Student();
-//	       System.out.println("Enter Name");
-//	         Scanner userInputEntry = new Scanner(System.in);
-//	       array[i].setName(userInputEntry .next());
-//	       System.out.println("Enter Id");
-//	       array[i].setIdNumber(userInputEntry .nextLong());
-//	    }
-		
+public static void fillArray(Array[] array) {
+	for(int i = 0; i < array.length; i++) {
+	     System.out.println("Enter a string:");
+		String word[i] = input.nextString();
+	     System.out.println("Enter a letter:");
+	     String letter = in.nextLine();
+			
+	     if(findKeyword(0, letter) >= 0) {
+				System.out.println("Yep its got one of those");
+			}
+			else
+				System.out.println("Sorry that letter is not in the word");
 		}
-
+	}
+}		
 	

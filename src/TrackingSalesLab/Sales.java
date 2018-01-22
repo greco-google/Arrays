@@ -24,25 +24,27 @@ public class Sales {
 		System.out.println("--------------------");
 		sum = 0;
 		for (int i = 0; i < sales.length; i++) {
-			System.out.println("     " + (i + 1) + "         " + sales[i]);
+			System.out.println("     " + (i + 1) + "    |   $" + sales[i]);
 			sum += sales[i];
 		}
 
-		System.out.println("\nTotal sales: " + sum);
-		System.out.println("Average sales: " + (sum / SALESPEOPLE) + "\n");
+		System.out.println("\nTotal sales: $" + sum);
+		System.out.println("Average sales: $" + (sum / SALESPEOPLE) + "\n");
 		
 		for(int i = 0; i < sales.length; i++) {
 			if(sales[i] > maxSales) {
 				maxSales = sales[i];
+				maxSalesPerson = i;
 			}
 			if(sales[i] < minSales) {
 				minSales = sales[i];
+				minSalesPerson = i;
 			}
 		}
 		System.out.println("Salesperson "+ (maxSalesPerson + 1) + " had the "
-				+ "greatest amout of sales which was:  " + maxSales);
-		System.out.println("Salesperson " + (maxSalesPerson + 1) + " had the "
-				+ "lowest sales which was:  " + minSales);	
+				+ "greatest amout of sales which was:  $" + maxSales);
+		System.out.println("Salesperson " + (minSalesPerson + 1) + " had the "
+				+ "lowest sales which was:  $" + minSales);	
 			
 		
 	    System.out.println("Enter the amout for the quota:");
@@ -51,8 +53,8 @@ public class Sales {
 		
 		for (int i = 0; i < sales.length; i++) {
 			if (quota <= sales[i]) {
-				System.out.println("Salesperson" + (i + 1) + " met "
-						+ "the quota with sales of " + sales[i]);
+				System.out.println("Salesperson " + (i + 1) + " met "
+						+ "the quota with sales of $" + sales[i]);
 				}
 			}
 		}

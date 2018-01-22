@@ -6,9 +6,9 @@ public class Sales {
 	public static void main(String[] args) {
 		int sum;
 		int maxSalesPerson = 0;
-		int maxSales = 0;
+		int maxSales = Integer.MIN_VALUE;
 		int minSalesPerson = 0;
-		int minSales = 0;
+		int minSales = Integer.MAX_VALUE;
 
 		Scanner input = new Scanner(System.in);
 	    System.out.println("Enter the amout of people:");
@@ -29,5 +29,31 @@ public class Sales {
 		}
 
 		System.out.println("\nTotal sales: " + sum);
+		System.out.println("Average sales: " + (sum / SALESPEOPLE) + "\n");
+		
+		for(int i = 0; i < sales.length; i++) {
+			if(sales[i] > maxSales) {
+				maxSales = sales[i];
+			}
+			if(sales[i] < minSales) {
+				minSales = sales[i];
+			}
+		}
+		System.out.println("Salesperson "+ (maxSalesPerson + 1) + " had the "
+				+ "greatest amout of sales which was:  " + maxSales);
+		System.out.println("Salesperson " + (maxSalesPerson + 1) + " had the "
+				+ "lowest sales which was:  " + minSales);	
+			
+		
+	    System.out.println("Enter the amout for the quota:");
+	    int quota = input.nextInt();
+	    
+		
+		for (int i = 0; i < sales.length; i++) {
+			if (quota <= sales[i]) {
+				System.out.println("Salesperson" + (i + 1) + " met "
+						+ "the quota with sales of " + sales[i]);
+				}
+			}
+		}
 	}
-}

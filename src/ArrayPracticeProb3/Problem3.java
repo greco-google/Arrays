@@ -13,22 +13,23 @@ public class Problem3 {
 //	letter specified.
 	
 	public static void main(String[] args) {
+
 		
 		Scanner input = new Scanner(System.in);
 	    System.out.println("Enter size of array:");
 	    Scanner user = new Scanner(System.in);
 	    int inputLength =user.nextInt();
-	    int array[] = new int[inputLength];
-	    }
+	    String words[] = new String[inputLength];
+	    String letter;
 
-public static void fillArray(Array[] array) {
-	for(int i = 0; i < array.length; i++) {
-	     System.out.println("Enter a string:");
-		String word[i] = input.nextString();
+	for(int i = 0; i < words.length; i++) {
+	     System.out.println("Enter a word:");
+	     words[i] = input.next();
+	     System.out.println("You entered " + words[i]);
 	     System.out.println("Enter a letter:");
-	     String letter = in.nextLine();
+	     letter = input.next();
 			
-	     if(findKeyword(0, letter) >= 0) {
+	     if(words[i].contains(letter)) {
 				System.out.println("Yep its got one of those");
 			}
 			else

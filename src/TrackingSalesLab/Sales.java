@@ -7,6 +7,11 @@ public class Sales {
 		final int SALESPEOPLE = 5;
 		int[] sales = new int[SALESPEOPLE];
 		int sum;
+		int maxSalesPerson = 0;
+		int maxSales = 0;
+		int minSalesPerson = 0;
+		int minSales = 0;
+		
 
 		Scanner scan = new Scanner(System.in);
 

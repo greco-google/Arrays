@@ -37,6 +37,20 @@ public class ArrayListDemo {
 //		for (int i = 0; i < numbers.size(); i++) {
 //			System.out.println(numbers.get(i));
 //		}
+		
+ArrayList<String> names = new ArrayList<>();
+		
+		names.add("George");
+		names.add("John");
+		names.add("Abe");
+		names.remove(0);
+		names.remove("John");
+		names.set(0, "Abraham");
+		
+		for (String name: names) {
+			System.out.println(name);
+		}
+		
 	}
 
 }

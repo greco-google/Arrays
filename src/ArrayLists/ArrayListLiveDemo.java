@@ -6,6 +6,8 @@ public class ArrayListLiveDemo {
 	
 	public static void main(String[] args) {
 		
+		//Question: 2D Array List???
+		
 		ArrayList<Integer> numbers = new ArrayList();
 		
 		numbers.add(2);

@@ -14,9 +14,14 @@ public class ArrayListLiveDemo {
 		
 		numbers.set(0, 200);
 		
-		for(int i = 0; i < numbers.size(); i++) {
-			System.out.println(numbers.get(i));
+		//for each
+		for (Integer number : numbers) {
+			System.out.println(number);
 		}
+		
+//		for(int i = 0; i < numbers.size(); i++) {
+//			System.out.println(numbers.get(i));
+//		}
 		
 
 	}

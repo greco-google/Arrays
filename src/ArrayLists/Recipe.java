@@ -15,11 +15,12 @@ public class Recipe {
 		ingredients.add("Eggs");
 		ingredients.add("Baking soda");
 
+		
 		ingredients.remove(0);
-		
-		ingredients.set(3, "Olive oil");
-		
-		//ingredients.set(0, 200);
+		ingredients.set(2, "Olive oil");
+		ingredients.add(0, "Milk");
+		ingredients.add(0, "Bake a cake with these ingredients:");
+
 		
 		//for each
 		for (String ingredient : ingredients) {

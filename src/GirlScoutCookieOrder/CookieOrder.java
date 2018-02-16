@@ -2,9 +2,22 @@ package GirlScoutCookieOrder;
 
 public class CookieOrder {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		private String variety;
+		private int numBoxes;
+		public CookieOrder(String variety, int numBoxes) {
+			super();
+			this.variety = variety;
+			this.numBoxes = numBoxes;
+		}
+		
+		public String getVariety() {
+			return variety;
+		}
+		
+		public int getNumBoxes() {
+			return numBoxes;
+		}
 
-	}
 
 }

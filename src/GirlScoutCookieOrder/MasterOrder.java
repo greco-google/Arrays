@@ -25,7 +25,7 @@ public class MasterOrder {
 	}
 	
 	public void removeVariety(String variety) {
-		for(int i = orders.size(); i >= 0; i--) {
+		for(int i = orders.size() - 1; i >= 0; i--) {
 			if(orders.get(i).getVariety().equals(variety)) {
 				orders.remove(i);
 			}

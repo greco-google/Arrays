@@ -63,6 +63,9 @@ public class OrderAppv2 {
 		else if(choice.equals("5")) {
 			System.exit(0);
 			}
+		else {
+			System.out.println("Invalid input");
+		}
 		System.out.println("Please select another Task");
 		System.out.println("Press 1 to order cookies");
 		System.out.println("Press 2 to remove an order");

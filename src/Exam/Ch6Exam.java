@@ -17,8 +17,20 @@ public static void main(String[] args) {
 				values1[i] += 1;
 			}
 		System.out.println(values1[4]);
+	
+ArrayList<String> ss = new ArrayList<>();
+	String[] s = new String[10];
+	
+	ArrayList<String> names = new ArrayList<>();
+	String[] name = {"john", "steve", "Zack"};
+	
+	
+	int foo = integer.MIN_VALUE;
+	for(int i = 0; i < list.length; i++) {
+		if (list[i] > foo) {
+			foo = list[i];
+		}
+	}
 	}
 }
-//[I@75b84c92
-//[I@75b84c92
-//[I@75b84c92
+

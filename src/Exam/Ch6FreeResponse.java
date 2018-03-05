@@ -40,14 +40,34 @@ public class Ch6FreeResponse {
 //			System.out.println("Max # found is " + max);
 //			System.out.println("Min # found is " + min);
 		
-		//#27
+//		//#27
+//int[][] table = new int[10][10];
+//		
+//		//load the 2D array with data
+//		//r = row
+//		//c = column
+//		for(int r = 0; r < table.length; r++) {
+//			
+//			//sub-row
+//			for(int c = 0; c < table[r].length; c++) {
+//				
+//				table[r][c] = r * c;
+//			}
+//		}
+//		//print the 2D array data
+//		for(int r = 0; r < table.length; r++) {
+//			//sub-row
+//			for(int c = 0; c < table[r].length; c++) {
+//				System.out.print(table[r][c] + "\t");
+//			}
+//			System.out.println();
+//		}
 		
 		
 		
 		
-		
-//		//#28
-		//public static void main(String[] args) {
+		//#28
+//		public static void main(String[] args) {
 //		ArrayList<String> ChocolateOrders = new ArrayList();
 //		
 //		ChocolateOrders.add("Milk Chocolate");
@@ -68,7 +88,8 @@ public class Ch6FreeResponse {
 //		for (String ChocolateOrder : ChocolateOrders) {
 //			System.out.println("\t" + ChocolateOrder);
 //		}
-		
-	}
+//		
+//	}
+}
 }
 
